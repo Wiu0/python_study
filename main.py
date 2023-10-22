@@ -17,7 +17,6 @@ def cadastrocartao():
 def cadastracompras():
     return render_template('cadastracompras.html')
 
-
 @app.route('/listacartao')
 def listacartao():
     return render_template('listacartao.html')
@@ -35,7 +34,6 @@ def visualizarfatura():
 @app.route('/dashboardhome')
 def dashboardHome():
     return render_template('dashboardhome.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True)
