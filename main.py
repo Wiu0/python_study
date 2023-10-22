@@ -5,7 +5,7 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def homepage():
-    return render_template('telalogin.html')
+    return render_template('home.html')
 
 
 @app.route('/cadastrocartao')
