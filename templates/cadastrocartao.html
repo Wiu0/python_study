@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar cartões</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssGeral.css') }}">
+
+</head>
+
+<body>
+    <div class="divContainer">
+        <nav class="barraLateral">
+            <img class="logoJtechBL" src="{{ url_for('static', filename='imagens/J.Tech Logo Branco.svg') }}"  alt="Logo Jornada Tech Branco">
+        <div class="div-redonda">
+            <img src="{{ url_for('static', filename='imagens/perfil.jpg') }}" alt="Foto de Perfil">
+            <h2 class="h4" style="text-align: center; color: white; padding-top: 24px;">Gerente Carlos</h2>
+        </div>
+        <div class="movebutton">
+        <button class="buttonMenu" onclick="window.location.href='visualizarfatura'">Clientes</button>
+        <button class="selectedButtonMenu" onclick="window.location.href='listacartao'">Cartões</button>
+        <button class="buttonMenu" onclick="window.location.href='cadastracompras'">Compras</button>
+        <button class="buttonMenu" onclick="window.location.href='relatoriodegastos'">Relatórios</button>
+        </div>
+    </nav>
+        <div class="div1">
+            <h1 class="h1" style="text-align: center;">CADASTRAR CARTÕES</h1>
+            <form>
+                <div class="form-container">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label class="h4" for="Name"> Nome</label>
+                        <input type="text" id="Name" name="Name">
+                    </div>
+                </div>
+                <label class="text-between text" class> R$ </label>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label class="h4" for="Limite">Limite</label>
+                        <input type="number" id="limite" name="limite">
+                    </div>
+                </div>
+                <div class="formButton">
+                    <button class="buttonCancel" style="color: white;" type="reset">Cancelar</button>
+                    <button class="button" style="color: white;" type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

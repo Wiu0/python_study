@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+.h1 {color: var(--Blue-5, #001642);
+
+    /* H1. Jornada Tech */
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 48px;
+}
+
+.h2 {
+    color: var(--Blue-5, #001642);
+
+    /* H2. Jornada Tech */
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h3 {
+    color: var(--Blue-5, #001642);
+
+    /* H3. Jornada Tech */
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h4 {
+    color: var(--Blue-5, #001642);
+
+    /* H4. Jornada Tech */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text {
+    color: var(--Blue-5, #001642);
+
+    /* Texto Jornada Tech */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.div1 {
+    background: #fff;
+    width: 1440px;
+    height: 1024px;
+}
+
+.barraLateral {
+    width: 290px;
+    height: 1024px;
+    flex-shrink: 0;
+    background: var(--Blue-1, #5F94D9);
+}
+
+.divContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.text-between {
+    top: 37px;
+    left: 257px;
+    position: relative;
+}
+
+.form-column {
+    padding: 10px;
+}
+
+.form-group {
+    position: relative;
+    left: 250px;
+}
+
+.formButton {
+    top: 80px;
+    right: 72px;
+    position:relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+.buttonMenu {
+    background-color: #ffffff;
+    color: #5F94D9;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: block;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+
+.selectedButtonMenu {
+    background-color: #001642;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: block;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+button {
+    background-color: #5F94D9;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 9px;
+}
+
+.buttonCancel {
+    background-color: #073763;
+    color: #fff;
+    padding: 10px 20px;
+    margin:10px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logoJtechBL {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.div-redonda {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.div-redonda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.movebutton{
+    position: relative;
+    left: 58px;
+    top: 150px;
+}
