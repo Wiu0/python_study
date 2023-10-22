@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar cartões</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssGeral.css') }}">
-
-</head>
-
-<body>
+{%extends "home.html"%}
+{%block content%}
     <div class="divContainer">
         <nav class="barraLateral">
             <img class="logoJtechBL" src="{{ url_for('static', filename='imagens/J.Tech Logo Branco.svg') }}"  alt="Logo Jornada Tech Branco">
@@ -49,5 +39,4 @@
         </form>
     </div>
 </div>
-</body>
-</html>
+{%endblock%}

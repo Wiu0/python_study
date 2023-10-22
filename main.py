@@ -9,12 +9,12 @@ def homepage():
 
 
 @app.route('/cadastrocartao')
-def cadastrocartao():
+def cadastrarCartao():
     return render_template('cadastrocartao.html')
 
 
 @app.route('/cadastracompras')
-def cadastracompras():
+def cadastrarCompras():
     return render_template('cadastracompras.html')
 
 @app.route('/listacartao')
@@ -28,7 +28,7 @@ def relatoriodegastos():
 
 
 @app.route('/visualizarfatura')
-def visualizarfatura():
+def visualizarFatura():
     return render_template('visualizarFatura.html')
 
 @app.route('/dashboardhome')

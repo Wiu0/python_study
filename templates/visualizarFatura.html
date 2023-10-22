@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <title>Visualizar Fatura</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssGeral.css') }}">
-
-</head>
-<body>
+{%extends "home.html"%}
+{%block content%}
 <div class="divContainer">
         <nav class="barraLateral">
             <img class="logoJtechBL" src="{{ url_for('static', filename='imagens/J.Tech Logo Branco.svg') }}"  alt="Logo Jornada Tech Branco">
@@ -22,5 +15,4 @@
         </div>
         </nav>
 </div>
-</body>
-</html>
+{%endblock%}

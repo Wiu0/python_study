@@ -23,20 +23,26 @@
     <nav id = "navbar" class = "nav-menu"> 
         <ul class = "nav flex-column">
             <li class = "nav-item">
-                <a class = "nav-link" aria-current = "page" href = "#"><i class = "bi bi-house" aria-hidden="true"></i>Inicio</a>
+                <a class = "nav-link" href="{{url_for('dashboardHome')}}" aria-current = "page" href = "#"><i class = "bi bi-house" aria-hidden="true"></i>Inicio</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link " href = "#"><i class="bi bi-credit-card"></i>Cartão</a>
+                <a class = "nav-link " href="{{url_for('cadastrarCartao')}}"><i class="bi bi-credit-card"></i>Cartão</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link " href = "#"><i class="bi bi-cart"></i>Compras</a>
+                <a class = "nav-link " href="{{url_for('cadastrarCompras')}}"><i class="bi bi-cart"></i>Compras</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link " href = "#"><i class="bi bi-receipt"></i>Fatura</a>
+                <a class = "nav-link " href="{{url_for('visualizarFatura')}}"><i class="bi bi-receipt"></i>Fatura</a>
             </li>
         </ul>
     </nav>
    </aside>
+   <main id = "main">
+    <div class = "container">
+        {%block content%}
+        {%endblock%}
+    </div>
+   </main>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"> </script>
     <script src="../static/script.js"> </script>
 </body>
