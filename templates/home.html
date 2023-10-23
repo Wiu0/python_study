@@ -38,10 +38,14 @@
     </nav>
    </aside>
    <main id = "main">
-    <div class = "container">
+        <div class="header-div">
+            <img src="{{ url_for('static', filename='img/jtech_logo_azul.svg') }}"  alt="Logo Jornada Tech">
+        </div>
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
         {%block content%}
         {%endblock%}
-    </div>
    </main>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"> </script>
     <script src="../static/script.js"> </script>

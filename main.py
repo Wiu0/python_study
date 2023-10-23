@@ -1,17 +1,36 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, url_for, flash, redirect
 
 app = Flask(__name__, static_url_path='/static')
 
+app.config['SECRET_KEY'] = 'your secret key'
+
+messages = [{'name': 'Message One',
+             'content': 'Message One Content'},
+            {'limit': 'Message Two',
+             'content': 'Message Two Content'}
+            ]
 
 @app.route('/')
 def homepage():
     return render_template('home.html')
 
 
-@app.route('/cadastrocartao')
+@app.route('/cadastrocartao', methods=('GET', 'POST'))
 def cadastrarCartao():
-    return render_template('cadastrocartao.html')
-
+    print(request.method)
+    if request.method == 'POST':
+        name = request.form['txtNome']
+        limit = request.form['txtLimite']
+        if not name:
+            flash('Nome é obrigatório!')
+        elif not limit:
+            flash('Limite do cartão é obrigatório')
+            messages.append({'name': name, 'limit': limit})
+        flash(name + ' cadastrado com sucesso')
+        messages.append({'name': name, 'limit': limit})
+        return redirect(url_for('cadastrarCartao'))
+    else:
+        return render_template('cadastrocartao.html')
 
 @app.route('/cadastracompras')
 def cadastrarCompras():
